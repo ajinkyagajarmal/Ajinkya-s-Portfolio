@@ -86,7 +86,9 @@ const Education = () => {
           <div className="certifications-list">
             {certificationData.map((item, index) => (
               <div key={index} className="certification-item">
-                <div className="certification-icon"></div>
+                <div className="certification-icon">
+                <i className="fas fa-trophy" style={{color:'black'}}></i>
+                </div>
                 <div className="certification-details">
                   <h4 className="certification-title">{item.title}</h4>
                   <p className="certification-issuer">{item.issuer} • {item.date}</p>
