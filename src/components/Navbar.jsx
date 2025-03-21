@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import closeIcon from '../Assets/close.png';
 
 const Navbar = ({ currentSection, handleNavigation }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,7 +36,7 @@ const Navbar = ({ currentSection, handleNavigation }) => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <div className="navbar-logo" onClick={() => handleNavigation('home')}>
-          <span className="logo-text">DevPortfolio</span>
+          <span className="logo-text">The Invincible Studio</span>
         </div>
         
         <div className="menu-icon" onClick={toggleMenu}>
@@ -47,6 +48,10 @@ const Navbar = ({ currentSection, handleNavigation }) => {
         </div>
         
         <ul className={`nav-menu ${menuOpen ? 'active' : ''}`}>
+        <div className="close-button" onClick={toggleMenu}>
+        {/* <span>x</span> */}
+        <img src={closeIcon} alt="Close" width="54" height="54" />
+        </div>
           {navItems.map((item) => (
             <li key={item.id} className="nav-item">
               <a

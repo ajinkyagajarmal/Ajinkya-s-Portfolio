@@ -67,7 +67,7 @@ const App = () => {
           
           <Suspense fallback={null}>
             <FloatingParticles count={isMobile ? 50 : 200} />
-            {!isMobile && <Stars radius={100} depth={50} count={1000} factor={4} />}
+            {!isMobile && <Stars radius={100} depth={50} count={2500} factor={3} />}
           </Suspense>
           
           <OrbitControls 

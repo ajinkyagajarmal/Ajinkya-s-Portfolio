@@ -9,8 +9,6 @@ body, html {
   scroll-behavior: smooth;
   background-color: #000000;
   opacity: 0.95;
-  background-image: './Assets/images/star.jpg';
-  /* background-color: #000000; */
   color: #ffffff;
   overflow-x: hidden;
 }
@@ -109,6 +107,35 @@ body, html {
 .menu-icon {
   display: none;
   cursor: pointer;
+}
+
+/* Add these styles to your existing CSS */
+.close-button {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.close-button span {
+  display: block;
+  padding: 0px 10px 0px 0px;
+}
+
+/* Media query for mobile view */
+@media screen and (max-width: 768px) {
+  .close-button {
+    display: block;
+    font-size: 3rem;
+  }
+  
+  .nav-menu.active {
+    padding-top: 60px; /* Make space for the close button */
+  }
 }
 
 .hamburger {
