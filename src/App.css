@@ -117,17 +117,25 @@ body, html {
 .close-button {
   display: none;
   position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 2rem;
+  top: 1rem;
+  right: 1.5rem;
+  /* font-size: 2rem; */
   color: #ffffff;
   cursor: pointer;
-  z-index: 101;
+  z-index: 110;
 }
 
 .close-button span {
   display: block;
   padding: 0px 10px 0px 0px;
+}
+.nav-menu.active .close-button {
+  display: block; /* Specifically ensure visibility when the menu is active */
+}
+
+.close-button .h-8, .close-button .w-8 {
+  width: 2.8rem;
+  height: 2.8rem;
 }
 
 /* Media query for mobile view */

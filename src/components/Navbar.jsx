@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import closeIcon from '../Assets/close.png';
+import { XIcon } from '@heroicons/react/outline';
+// import closeIcon from '../Assets/close.png';
 
 const Navbar = ({ currentSection, handleNavigation }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -68,26 +69,26 @@ const Navbar = ({ currentSection, handleNavigation }) => {
         </div>
         
         <ul className={`nav-menu ${menuOpen ? 'active' : ''}`}>
-        <div className="close-button" onClick={toggleMenu}>
-        {/* <span>x</span> */}
-        <img src={closeIcon} alt="Close" width="54" height="54" loading='lazy' />
-        </div>
-          {navItems.map((item) => (
-            <li key={item.id} className="nav-item">
-              <a
-                href={`#${item.id}`}
-                className={currentSection === item.id ? 'active' : ''}
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleNavigation(item.id);
-                  setMenuOpen(false);
-                }}
-              >
-                {item.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+  <div className="close-button" onClick={toggleMenu}>
+  <XIcon className="h-8 w-8 text-white" />
+  </div>
+  {navItems.map((item) => (
+    <li key={item.id} className="nav-item">
+      <a
+        href={`#${item.id}`}
+        className={currentSection === item.id ? 'active' : ''}
+        onClick={(e) => {
+          e.preventDefault();
+          handleNavigation(item.id);
+          setMenuOpen(false);
+        }}
+      >
+        {item.label}
+      </a>
+    </li>
+  ))}
+</ul>
+
       </div>
     </nav>
   );
