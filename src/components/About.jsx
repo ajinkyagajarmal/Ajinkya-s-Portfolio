@@ -42,8 +42,8 @@ const About = () => {
 </div>
         <div className="about-text">
           <p>
-            I'm a passionate software developer with over 5 years of experience building modern web applications.
-            I specialize in creating interactive experiences using React, Three.js, and other cutting-edge technologies.
+            I'm a passionate software developer with over 1 year of experience building modern web applications.
+            I specialize in creating interactive experiences using React, NodeJS, MongoDB and other cutting-edge technologies.
           </p>
           <p>
             My journey in software development began when I built my first website at 16. Since then,

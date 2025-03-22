@@ -94,7 +94,7 @@ const Projects = () => {
 
   return (
     <div className="section-container1" ref={projectsRef}>
-      <h2 className="section-title">Projects So Far</h2>
+      <h2 className="section-title">Recent Projects</h2>
       
       {/* <div className="project-filters">
         <button 
