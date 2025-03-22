@@ -9,6 +9,21 @@ const Navbar = ({ currentSection, handleNavigation }) => {
     setMenuOpen(!menuOpen);
   };
 
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const isScrolled = window.scrollY > 50;
+  //     if (isScrolled !== scrolled) {
+  //       setScrolled(isScrolled);
+  //     }
+  //   };
+
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, [scrolled]);
+
+
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 50;
@@ -16,13 +31,18 @@ const Navbar = ({ currentSection, handleNavigation }) => {
         setScrolled(isScrolled);
       }
     };
-
-    window.addEventListener('scroll', handleScroll);
+  
+    // Delay adding the scroll event listener to avoid blocking rendering
+    const timer = setTimeout(() => {
+      window.addEventListener('scroll', handleScroll);
+    }, 500);  // Delay event listener
+  
     return () => {
+      clearTimeout(timer);
       window.removeEventListener('scroll', handleScroll);
     };
   }, [scrolled]);
-
+  
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
