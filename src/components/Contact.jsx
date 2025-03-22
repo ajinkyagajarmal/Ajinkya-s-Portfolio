@@ -11,6 +11,46 @@ const Contact = () => {
   });
   const [formStatus, setFormStatus] = useState(null);
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setFormStatus('sending');
+  
+    try {
+      // Make a POST request to the serverless function
+      const response = await fetch('/api/server', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData), // Send form data to the backend API
+      });
+  
+      const result = await response.json();
+  
+      if (response.ok) {
+        setFormStatus('success');
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
+        });
+  
+        // Reset status after 5 seconds
+        setTimeout(() => {
+          setFormStatus(null);
+        }, 5000);
+      } else {
+        setFormStatus('error');
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+      setFormStatus('error');
+    }
+  };
+  
+  
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -40,26 +80,6 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setFormStatus('sending');
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setFormStatus('success');
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
-      });
-      
-      // Reset status after 5 seconds
-      setTimeout(() => {
-        setFormStatus(null);
-      }, 5000);
-    }, 1500);
-  };
 
   return (
     <div className="section-container" ref={contactRef}>
