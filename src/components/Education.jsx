@@ -1,4 +1,6 @@
 import React, { useRef, useEffect } from 'react';
+import { faTrophy } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Education = () => {
   const educationRef = useRef(null);
@@ -87,7 +89,7 @@ const Education = () => {
             {certificationData.map((item, index) => (
               <div key={index} className="certification-item">
                 <div className="certification-icon">
-                <i className="fas fa-trophy" style={{color:'black'}}></i>
+                <FontAwesomeIcon icon={faTrophy} style={{ color: 'gold' }} />
                 </div>
                 <div className="certification-details">
                   <h4 className="certification-title">{item.title}</h4>

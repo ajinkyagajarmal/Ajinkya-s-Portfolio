@@ -618,7 +618,7 @@ section {
 .subsection-title {
   font-size: 1.8rem;
   margin-bottom: 2rem;
-  color: #64b5f6;
+  color: #8c9eff;
 }
 
 .timeline {
@@ -704,7 +704,7 @@ section {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: linear-gradient(45deg, #64b5f6, #8c9eff);
+  background: linear-gradient(45deg, #111111, #000000);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -777,6 +777,7 @@ section {
 .contact-text h4 {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
+  color: #8c9eff;
 }
 
 .contact-text p {
