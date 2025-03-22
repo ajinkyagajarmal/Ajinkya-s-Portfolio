@@ -50,7 +50,7 @@ const Navbar = ({ currentSection, handleNavigation }) => {
         <ul className={`nav-menu ${menuOpen ? 'active' : ''}`}>
         <div className="close-button" onClick={toggleMenu}>
         {/* <span>x</span> */}
-        <img src={closeIcon} alt="Close" width="54" height="54" />
+        <img src={closeIcon} alt="Close" width="54" height="54" loading='lazy' />
         </div>
           {navItems.map((item) => (
             <li key={item.id} className="nav-item">

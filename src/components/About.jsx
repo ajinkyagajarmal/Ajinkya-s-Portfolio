@@ -37,7 +37,7 @@ const About = () => {
 
 <div className="about-image">
   <div className="image-placeholder">
-    <img src= {ajinkya} alt="Ajinkya's Image" width="320" height="290" style={{ borderRadius: "10%" }} />
+    <img src= {ajinkya} alt="Ajinkya's Image" width="320" height="290" loading='lazy' style={{ borderRadius: "10%" }} />
   </div>
 </div>
         <div className="about-text">

@@ -66,6 +66,7 @@ body, html {
   background: linear-gradient(45deg, #a931e1a2, #8c9eff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: #8c9eff;
 }
 
 .nav-menu {
