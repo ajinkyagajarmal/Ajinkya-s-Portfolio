@@ -20,7 +20,7 @@ module.exports = async (req, res) => {
       from: process.env.EMAIL_USER, // Sender's email (user-provided)
       to: 'ajinkya.gajarmal@gmail.com', // Receiver's email (you or your business email)
       cc: 'ajinkya.gajarmal2001@gmail.com', // CC email (optional)
-    //   subject: subject || 'No Subject', // Subject of the email
+      subject: subject || 'No Subject', // Subject of the email
       text: `
         Name: ${name}
         Email: ${email}
