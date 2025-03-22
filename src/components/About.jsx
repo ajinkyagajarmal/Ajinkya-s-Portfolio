@@ -29,11 +29,6 @@ const About = () => {
     <div className="section-container" ref={aboutRef}>
       <h2 className="section-title">Know Me Better</h2>
       <div className="about-content">
-        {/* <div className="about-image">
-          <div className="image-placeholder">
-            <span>JD</span>
-          </div>
-        </div> */}
 
 <div className="about-image">
   <div className="image-placeholder">
@@ -71,7 +66,7 @@ const About = () => {
               <span className="info-value">Open to opportunities</span>
             </div>
           </div>
-          <a href="/resume.pdf" target="_blank" className="resume-button">Download Resume</a>
+          <a href="/Assets/Ajinkya-Gajarmal-Resume.pdf" target="" className="resume-button">Download Resume</a>
         </div>
       </div>
     </div>
