@@ -66,7 +66,7 @@ const About = () => {
               <span className="info-value">Open to opportunities</span>
             </div>
           </div>
-          <a href="/Assets/Ajinkya-Gajarmal-Resume.pdf" target="" className="resume-button">Download Resume</a>
+          <a href="/Assets/Ajinkya-Gajarmal-Resume.pdf" target="_blank" className="resume-button">Download Resume</a>
         </div>
       </div>
     </div>
