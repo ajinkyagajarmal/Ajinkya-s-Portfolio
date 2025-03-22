@@ -27,7 +27,7 @@ const About = () => {
 
   return (
     <div className="section-container" ref={aboutRef}>
-      <h2 className="section-title">About Me</h2>
+      <h2 className="section-title">Know Me Better</h2>
       <div className="about-content">
         {/* <div className="about-image">
           <div className="image-placeholder">

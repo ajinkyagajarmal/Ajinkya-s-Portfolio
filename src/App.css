@@ -62,7 +62,8 @@ body, html {
   font-size: 1.8rem;
   font-weight: 700;
   cursor: pointer;
-  background: linear-gradient(45deg, #64b5f6, #8c9eff);
+  /* background: linear-gradient(45deg, #64b5f6, #8c9eff); */
+  background: linear-gradient(45deg, #a931e1a2, #8c9eff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -86,7 +87,8 @@ body, html {
 }
 
 .nav-item a:hover, .nav-item a.active {
-  color: #64b5f6;
+  /* color: #64b5f6; */
+  color: aliceblue;
 }
 
 .nav-item a:after {
@@ -96,7 +98,8 @@ body, html {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #64b5f6;
+  /* background-color: #64b5f6; */
+  background: linear-gradient(45deg, #a931e1a2, #8c9eff);
   transition: width 0.3s ease;
 }
 
@@ -135,6 +138,9 @@ body, html {
   
   .nav-menu.active {
     padding-top: 60px; /* Make space for the close button */
+  }
+  .logo-text{
+    font-size: 1.4rem;
   }
 }
 
@@ -190,7 +196,7 @@ body, html {
 }
 
 section {
-  padding: 100px 2rem;
+  padding: 80px 5.5rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -204,8 +210,20 @@ section {
   transform: translateY(50px);
   transition: all 0.8s ease;
 }
+.section-container1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
 
 .section-container.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.section-container1.animate-in {
+  display: contents;
   opacity: 1;
   transform: translateY(0);
 }
@@ -224,7 +242,8 @@ section {
   left: 0;
   width: 60px;
   height: 4px;
-  background: linear-gradient(45deg, #64b5f6, #8c9eff);
+  /* background: linear-gradient(45deg, #64b5f6, #8c9eff); */
+  background: linear-gradient(45deg, #a931e1a2, #8c9eff);
 }
 
 /* Home Styles */
@@ -290,7 +309,7 @@ section {
 }
 
 .primary-button {
-  background: linear-gradient(45deg, #64b5f6, #8c9eff);
+  background: linear-gradient(45deg, #a931e1a2, #8c9eff);
   color: #ffffff;
 }
 
@@ -323,18 +342,61 @@ section {
   align-items: flex-start;
 }
 
-.image-placeholder {
+/* .image-placeholder {
   width: 280px;
   height: 280px;
   border-radius: 20px;
-  background: linear-gradient(45deg, #64b5f6, #8c9eff);
+  background: linear-gradient(45deg, #a931e1a2, #8c9eff);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 5rem;
   font-weight: 700;
   color: #ffffff;
+} */
+
+.image-placeholder {
+  width: 280px;
+  height: 280px;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #a931e1a2, #8c9eff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  animation: float 3s ease-in-out infinite;
+  perspective: 1000px; /* Add perspective for a 3D effect */
 }
+
+/* Create the floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0) rotateX(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotateX(10deg); /* Rotate slightly for added 3D feel */
+  }
+  100% {
+    transform: translateY(0) rotateX(0deg);
+  }
+}
+
+/* Image Styling */
+.image-placeholder img {
+  border-radius: 10%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.image-placeholder:hover img {
+  transform: scale(1.05) rotateX(5deg);  /* Slightly rotate on hover */
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);  /* Increase shadow on hover */
+}
+
 
 .about-text p {
   margin-bottom: 1.5rem;
@@ -367,7 +429,7 @@ section {
 .resume-button {
   display: inline-block;
   padding: 0.8rem 1.5rem;
-  background: linear-gradient(45deg, #64b5f6, #8c9eff);
+  background: linear-gradient(45deg, #a931e1a2, #8c9eff);
   color: #ffffff;
   border-radius: 4px;
   text-decoration: none;
@@ -768,7 +830,7 @@ section {
 
 .submit-button {
   padding: 1rem 2rem;
-  background: linear-gradient(45deg, #64b5f6, #8c9eff);
+  background: linear-gradient(45deg, #a931e1a2, #8c9eff);
   color: #ffffff;
   border: none;
   border-radius: 4px;
@@ -810,7 +872,8 @@ section {
 .footer-logo {
   font-size: 1.8rem;
   font-weight: 700;
-  background: linear-gradient(45deg, #64b5f6, #8c9eff);
+  /* background: linear-gradient(45deg, #64b5f6, #8c9eff); */
+  background: linear-gradient(45deg, #a931e1a2, #8c9eff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -966,9 +1029,13 @@ section {
   section {
     padding: 80px 1.5rem;
   }
+
+  .greeting{
+    font-size: 1.2rem;
+  }
   
   .name {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
   
   .title {

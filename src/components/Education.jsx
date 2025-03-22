@@ -61,7 +61,7 @@ const Education = () => {
 
   return (
     <div className="section-container" ref={educationRef}>
-      <h2 className="section-title">Education & Certifications</h2>
+      <h2 className="section-title">Academics & Achievements</h2>
       
       <div className="education-content">
         <div className="education-section">

@@ -45,7 +45,7 @@ const Skills = () => {
 
   return (
     <div className="section-container" ref={skillsRef}>
-      <h2 className="section-title">Professional Skills</h2>
+      <h2 className="section-title">What I Excel At</h2>
 
       {/* Techstack Section */}
       <div className="tech-icons-grid">

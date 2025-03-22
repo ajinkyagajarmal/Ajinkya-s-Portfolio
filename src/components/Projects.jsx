@@ -93,10 +93,10 @@ const Projects = () => {
     : projects.filter(project => project.category === filter);
 
   return (
-    <div className="section-container" ref={projectsRef}>
-      <h2 className="section-title">Projects</h2>
+    <div className="section-container1" ref={projectsRef}>
+      <h2 className="section-title">Projects So Far</h2>
       
-      <div className="project-filters">
+      {/* <div className="project-filters">
         <button 
           className={filter === 'all' ? 'active' : ''} 
           onClick={() => setFilter('all')}
@@ -127,7 +127,7 @@ const Projects = () => {
         >
           AR/VR
         </button>
-      </div>
+      </div> */}
       
       <div className="projects-grid">
         {filteredProjects.map((project) => (

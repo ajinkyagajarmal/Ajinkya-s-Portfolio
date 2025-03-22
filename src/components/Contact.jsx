@@ -63,7 +63,7 @@ const Contact = () => {
 
   return (
     <div className="section-container" ref={contactRef}>
-      <h2 className="section-title">Contact Me</h2>
+      <h2 className="section-title">Let's Connect</h2>
       
       <div className="contact-content">
         <div className="contact-info">
