@@ -1268,8 +1268,8 @@ section {
 
 @media (max-width: 480px) {
   .scroll-up-button {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     padding: 2px;
   }
   .arrow {
