@@ -79,8 +79,7 @@ body, html {
   font-size: 1.8rem;
   font-weight: 700;
   cursor: pointer;
-  /* background: linear-gradient(45deg, #64b5f6, #8c9eff); */
-  background: linear-gradient(45deg, #a931e1a2, #8c9eff);
+  background: linear-gradient(45deg, #a931e1a2,#E97451, #8c9eff);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -116,7 +115,7 @@ body, html {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(45deg, #a931e1a2, #8c9eff);
+  background: linear-gradient(45deg, #a931e1a2,#E97451, #8c9eff);
   transition: width 0.3s ease;
 }
 
@@ -165,7 +164,7 @@ body, html {
     padding-top: 60px; /* Make space for the close button */
   }
   .logo-text{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -267,7 +266,7 @@ section {
   left: 0;
   width: 60px;
   height: 4px;
-  background: linear-gradient(45deg, #a931e1a2, #8c9eff);
+  background: linear-gradient(45deg, #a931e1a2,#E97451, #8c9eff);
 }
 
 /* Home Styles */
@@ -300,7 +299,7 @@ section {
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #ffffff;
+  color: bisque;
 }
 
 .title {
@@ -333,14 +332,15 @@ section {
 }
 
 .primary-button {
-  background: linear-gradient(45deg, #a931e1a2, #8c9eff);
-  color: #ffffff;
+  background: linear-gradient(45deg, #a931e1a2,#E97451, #8c9eff);
+  color: #000000;
+  font-weight: bold;
 }
 
 .secondary-button {
   background: transparent;
   color: #ffffff;
-  border: 2px solid #8c9eff;
+  border: 2px solid #a931e1a2;
 }
 
 .primary-button:hover {
@@ -897,15 +897,15 @@ section {
 .footer-logo {
   font-size: 1.8rem;
   font-weight: 700;
-  /* background: linear-gradient(45deg, #64b5f6, #8c9eff); */
-  background: linear-gradient(45deg, #a931e1a2, #8c9eff);
+  margin-bottom: 10px;
+  background: linear-gradient(45deg, #a931e1a2, #E97451, #8c9eff);
   -webkit-background-clip: text;
   background-clip: text;  -webkit-text-fill-color: transparent;
 }
 
 .footer-links {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 1rem;
 }
 
@@ -944,7 +944,12 @@ section {
 
 .footer-bottom p {
   color: #b0bec5;
-  font-size: 0.9rem;
+  font-size: 1rem;
+}
+@media screen and (max-width: 768px){
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
 }
 
 /* Loading Screen */
@@ -1150,4 +1155,65 @@ section {
 
 .animate-in {
   animation: animate-in 1s ease-out forwards;
+}
+
+
+/* CSS for ScrollButton.jsx component */
+
+.scroll-up-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background-clip: padding-box; /* Ensures background stays within border */
+  border: none;
+  padding: 2px; /* Creates space for the inner circle */
+}
+
+.inner-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #2C2C2C; /* Button's main background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  color: white;
+  font-size: 24px;
+}
+
+.scroll-up-button:hover .inner-circle {
+  background-color:#000000; /* Hover effect on inner circle only */
+}
+
+@media (max-width: 768px) {
+  .scroll-up-button {
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+  }
+  .arrow {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-up-button {
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+  }
+  .arrow {
+    font-size: 18px;
+  }
 }
