@@ -33,10 +33,10 @@ const Home = () => {
         <div className="title">
           <TypeAnimation
             sequence={[
-              'Software Developer', 2000,
               // 'Web Developer', 2000,
               'Full Stack Developer', 2000,
               'MERN Stack Developer', 2000,
+              'Software Developer', 2000,
               'Three.js Enthusiast', 2000,
             ]}
             wrapper="span"

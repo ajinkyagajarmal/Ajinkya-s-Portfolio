@@ -308,6 +308,7 @@ section {
   font-weight: 600;
   margin-bottom: 2rem;
   color: #8c9eff;
+  /* color:var(--theme-color); */
   height: 2.5rem;
 }
 
@@ -1230,6 +1231,7 @@ section {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  background-color: #000000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   background-clip: padding-box; /* Ensures background stays within border */
   border: none;
