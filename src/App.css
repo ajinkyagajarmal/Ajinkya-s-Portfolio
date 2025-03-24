@@ -384,7 +384,7 @@ section {
   width: 280px;
   height: 280px;
   border-radius: 20px;
-  background: linear-gradient(45deg, #a931e1a2, #8c9eff);
+  background: linear-gradient(45deg, #a931e1a2,#E97451, #8c9eff);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -715,7 +715,7 @@ section {
 }
 
 .certification-item:hover {
-  background:linear-gradient(45deg, #a931e1a2, #8c9eff);
+  background:linear-gradient(45deg, #a931e1a2,#E97451, #8c9eff);
   transform: translateX(10px);
 }
 
