@@ -144,7 +144,7 @@ canvas {
   top: 1rem;
   right: 1.5rem;
   /* font-size: 2rem; */
-  color: #ffffff;
+  color: bisque;
   cursor: pointer;
   z-index: 110;
 }
@@ -188,7 +188,7 @@ canvas {
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #ffffff;
+  background: bisque;
   border-radius: 3px;
   opacity: 1;
   left: 0;
@@ -755,7 +755,17 @@ section {
 
 .certification-issuer {
   font-size: 0.9rem;
-  color: #b0bec5;
+  color: aliceblue;
+}
+
+@media screen and (max-width: 768px) {
+  .certification-title {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+  }
+  .certification-issuer{
+    font-size: 0.8rem;
+  }
 }
 
 /* Contact Styles */

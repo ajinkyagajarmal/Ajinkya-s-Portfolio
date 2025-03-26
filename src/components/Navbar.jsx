@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { XIcon } from '@heroicons/react/outline';
-// import closeIcon from '../Assets/close.png';
 
 const Navbar = ({ currentSection, handleNavigation }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,21 +8,6 @@ const Navbar = ({ currentSection, handleNavigation }) => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const isScrolled = window.scrollY > 50;
-  //     if (isScrolled !== scrolled) {
-  //       setScrolled(isScrolled);
-  //     }
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, [scrolled]);
-
 
   useEffect(() => {
     const handleScroll = () => {
