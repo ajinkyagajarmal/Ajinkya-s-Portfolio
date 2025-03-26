@@ -243,6 +243,7 @@ section {
   transform: translateY(50px);
   transition: all 0.8s ease;
 }
+
 .section-container1 {
   max-width: 1200px;
   margin: 0 auto;
@@ -975,6 +976,10 @@ section {
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
+
+  .section-container{
+    margin: 0;
+  }
   .footer {
     padding: 2rem 1rem 1rem;
   }
