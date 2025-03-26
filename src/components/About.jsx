@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import ajinkya from '../Assets/images/AJINKYA1.jpg';
+import ajinkya from '../Assets/images/AJINKYA1.webp';
 
 const About = () => {
   const aboutRef = useRef(null);
