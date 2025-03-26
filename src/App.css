@@ -105,7 +105,8 @@ canvas {
 
 .nav-item a {
   text-decoration: none;
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: bisque;
   font-weight: 500;
   position: relative;
   padding: 0.5rem 0;
@@ -113,7 +114,7 @@ canvas {
 }
 
 .nav-item a:hover, .nav-item a.active {
-  color: aliceblue;
+  color: bisque;
 }
 
 .nav-item a:after {
@@ -349,8 +350,8 @@ section {
 
 .secondary-button {
   background: transparent;
-  color: #ffffff;
-  border: 2px solid #a931e1a2;
+  color: bisque;
+  border: 2px solid #8c9eff;
 }
 
 .primary-button:hover {
@@ -359,6 +360,7 @@ section {
 }
 
 .secondary-button:hover {
+  color: #E97451;
   background: rgba(100, 181, 246, 0.1);
   transform: translateY(-5px);
 }
@@ -435,7 +437,8 @@ section {
 .about-text p {
   margin-bottom: 1.5rem;
   line-height: 1.8;
-  color: #b0bec5;
+  /* color: #b0bec5; */
+  color: bisque;
 }
 
 .personal-info {
@@ -457,7 +460,7 @@ section {
 }
 
 .info-value {
-  color: #ffffff;
+  color: bisque;
 }
 
 .resume-button {
@@ -774,7 +777,8 @@ section {
 .contact-info p {
   margin-bottom: 2rem;
   line-height: 1.8;
-  color: #b0bec5;
+  /* color: #b0bec5; */
+  color: bisque;
 }
 
 .contact-details {
@@ -821,7 +825,8 @@ section {
 .social-link {
   padding: 0.5rem 1rem;
   background: rgba(255, 255, 255, 0.05);
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: bisque;
   border-radius: 4px;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -829,7 +834,7 @@ section {
 
 .social-link:hover {
   background: rgba(100, 181, 246, 0.1);
-  color: #a931e1a2;
+  color: #E97451;
 }
 
 .contact-form-container {
@@ -926,7 +931,8 @@ section {
 }
 
 .footer-links a {
-  color: #b0bec5;
+  /* color: #b0bec5; */
+  color: bisque;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -943,7 +949,8 @@ section {
 }
 
 .social-icon {
-  color: #b0bec5;
+  /* color: #b0bec5; */
+  color: bisque;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -961,7 +968,8 @@ section {
 }
 
 .footer-bottom p {
-  color: #b0bec5;
+  /* color: #b0bec5; */
+  color: bisque;
   font-size: 1rem;
 }
 
@@ -1258,7 +1266,7 @@ section {
 }
 
 .arrow {
-  color: white;
+  color: bisque;
   font-size: 24px;
 }
 
