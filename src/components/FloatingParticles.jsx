@@ -141,7 +141,86 @@ const FloatingParticles = ({ count }) => {
 
 export default FloatingParticles;
 
+//Grok code
+// import React, { useRef, useMemo } from 'react';
+// import { useFrame } from '@react-three/fiber';
+// import * as THREE from 'three';
 
+// const FloatingParticles = ({ count }) => {
+//   const points = useRef();
+
+//   // Generate particle positions and sizes once
+//   const { positions, sizes } = useMemo(() => {
+//     const positions = new Float32Array(count * 3);
+//     const sizes = new Float32Array(count);
+
+//     for (let i = 0; i < count; i++) {
+//       positions[i * 3] = (Math.random() - 0.5) * 20;     // x
+//       positions[i * 3 + 1] = (Math.random() - 0.5) * 20; // y
+//       positions[i * 3 + 2] = (Math.random() - 0.5) * 20; // z
+//       sizes[i] = Math.random() * 0.2 + 0.05;
+//     }
+//     return { positions, sizes };
+//   }, [count]);
+
+//   // Create a single material for all particles
+//   const particleMaterial = useMemo(() => {
+//     const textureLoader = new THREE.TextureLoader();
+//     // Replace with a valid texture path or create a simple circle programmatically
+//     const texture = textureLoader.load('/circle.png') || createCircleTexture();
+//     return new THREE.PointsMaterial({
+//       color: 0xffffff,
+//       size: 0.2,
+//       map: texture,
+//       transparent: true,
+//       opacity: 0.8,
+//       sizeAttenuation: true,
+//     });
+//   }, []);
+
+//   // Optional: Create a fallback circle texture if the file is missing
+//   const createCircleTexture = () => {
+//     const canvas = document.createElement('canvas');
+//     canvas.width = 16;
+//     canvas.height = 16;
+//     const ctx = canvas.getContext('2d');
+//     ctx.beginPath();
+//     ctx.arc(8, 8, 6, 0, Math.PI * 2);
+//     ctx.fillStyle = '#ffffff';
+//     ctx.fill();
+//     return new THREE.CanvasTexture(canvas);
+//   };
+
+//   // Gentle rotation
+//   useFrame(() => {
+//     if (points.current) {
+//       points.current.rotation.x += 0.0002;
+//       points.current.rotation.y += 0.0003;
+//     }
+//   });
+
+//   return (
+//     <points ref={points}>
+//       <bufferGeometry>
+//         <bufferAttribute
+//           attach="attributes-position"
+//           count={count}
+//           array={positions}
+//           itemSize={3}
+//         />
+//         <bufferAttribute
+//           attach="attributes-size"
+//           count={count}
+//           array={sizes}
+//           itemSize={1}
+//         />
+//       </bufferGeometry>
+//       <primitive object={particleMaterial} />
+//     </points>
+//   );
+// };
+
+// export default FloatingParticles;
 
 // import React, { useRef, useState, useMemo } from "react";
 // import { useFrame } from "@react-three/fiber";
